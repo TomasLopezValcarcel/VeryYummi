@@ -13,7 +13,7 @@ struct ContentView: View {
     @State private var selectedFood: Int = 0
     
     @State private var foodName = ""
-    @State private var foodQty = 0
+    @State private var foodQty = 1
     @State private var foodUnit = ""
     @State private var foodCategory = ""
     @State private var foodExp = Date()
@@ -22,7 +22,7 @@ struct ContentView: View {
 
 
     var body: some View{
-        Form{
+        Form {
             Section{
                 VStack(alignment: .center, content: {
                     Text("\(kitchen.ingredients[selectedFood].displayIngredientsInfo())")
@@ -31,11 +31,20 @@ struct ContentView: View {
             Section{
                 VStack(alignment: .center, content: {
                     Text("Add a new ingredient").bold()
-                    TextField("Food name", text: $foodName)
-                    TextField("Quantity", value: $foodQty, formatter: NumberFormatter())
-                    TextField("Unit", text: $foodUnit)
-                    TextField("Category", text: $foodCategory)
-//                    Picker("Category", selection: $foodCategory)
+                    HStack{
+                        Text("Food name:  ")
+                        TextField("Ice Cream", text: $foodName)
+                    }
+                    Stepper("Quantity:   \(foodQty) \(foodUnit)", value: $foodQty, in: 1...99)
+                    HStack{
+                        Text("Unit:  ")
+                        TextField("Tubs", text: $foodUnit)
+                    }
+                    Picker("Category:", selection: $foodCategory) {
+                        ForEach(FoodCategories.allCases, id: \.self) { category in
+                            Text(category.rawValue).tag(category.rawValue)
+                        }
+                    }
                     DatePicker("Expiry date", selection: $foodExp, displayedComponents: .date)
                 })
             }
