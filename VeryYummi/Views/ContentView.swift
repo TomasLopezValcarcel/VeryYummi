@@ -54,7 +54,7 @@ struct ContentView: View {
             Section {
                 Button(action: {
                     print("hello world")
-                    ingredients.append(Ingredient(name: foodName, quantity: foodQty, unit: foodUnit, category: foodCategory, expdate: foodExp))
+//                    ingredients.append(Ingredient(name: foodName, quantity: foodQty, unit: foodUnit, category: foodCategory, expdate: foodExp))
                 }, label: { Text("blah")})
             }
         }
