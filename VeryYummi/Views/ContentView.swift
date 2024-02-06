@@ -49,13 +49,10 @@ struct ContentView: View {
                     }
                     DatePicker("Expiry date", selection: $foodExp, displayedComponents: .date)
                 })
-
-            }
-            Section {
                 Button(action: {
                     print("hello world")
 //                    ingredients.append(Ingredient(name: foodName, quantity: foodQty, unit: foodUnit, category: foodCategory, expdate: foodExp))
-                }, label: { Text("blah")})
+                }, label: { Text("Add ingredient")})
             }
         }
     }

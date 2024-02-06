@@ -10,20 +10,18 @@ import SwiftUI
 struct RecipesView: View {
     var body: some View {
         Text("Hello, World!")
-        VStack{
-            //recipe
-            //recipe
-            //recipe
+        List{
+            ForEach(Recipes) {recipe in
+                HStack {
+                    Text(Recipes.name)
+                    Text(Recipes.isFavourite)
+                }
+            }
         }
     }
 }
 
-struct Recipes {
-    let name: String
-    let ingredients: String
-    let isFavourite: Bool
-    let rating: Int
-} 
+
 
 
 
