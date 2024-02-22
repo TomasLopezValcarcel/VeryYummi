@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct RecipesView: View {
+    
+    let recipes = Recipes.example
+    
     var body: some View {
-        Text("Hello, World!")
         List{
-            ForEach(Recipes) {recipe in
+            ForEach(recipes) { recipe in
                 HStack {
-                    Text(Recipes.name)
-                    Text(Recipes.isFavourite)
+                    Text(recipe.name)
+                    Text("\(recipe.isFavourite ? "Favourite" : "")")
                 }
             }
         }

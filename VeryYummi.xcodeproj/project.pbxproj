@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC0676162B6D5532002C8F6D /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0676152B6D5532002C8F6D /* RecipesView.swift */; };
+		DC7F2AA22B877D32005A43B0 /* IngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F2AA12B877D32005A43B0 /* IngredientsView.swift */; };
 		DCDE87512B628CA300FA55E9 /* VeryYummiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE87502B628CA300FA55E9 /* VeryYummiApp.swift */; };
 		DCDE87532B628CA300FA55E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE87522B628CA300FA55E9 /* ContentView.swift */; };
 		DCDE87552B628CA600FA55E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDE87542B628CA600FA55E9 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		DC0676152B6D5532002C8F6D /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
+		DC7F2AA12B877D32005A43B0 /* IngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsView.swift; sourceTree = "<group>"; };
 		DCDE874D2B628CA300FA55E9 /* VeryYummi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeryYummi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDE87502B628CA300FA55E9 /* VeryYummiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeryYummiApp.swift; sourceTree = "<group>"; };
 		DCDE87522B628CA300FA55E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				DCDE87522B628CA300FA55E9 /* ContentView.swift */,
+				DC7F2AA12B877D32005A43B0 /* IngredientsView.swift */,
 				DC0676152B6D5532002C8F6D /* RecipesView.swift */,
 			);
 			path = Views;
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCDE87532B628CA300FA55E9 /* ContentView.swift in Sources */,
+				DC7F2AA22B877D32005A43B0 /* IngredientsView.swift in Sources */,
 				DCDE87512B628CA300FA55E9 /* VeryYummiApp.swift in Sources */,
 				DC0676162B6D5532002C8F6D /* RecipesView.swift in Sources */,
 				DCDE877D2B628CF000FA55E9 /* Content.swift in Sources */,
