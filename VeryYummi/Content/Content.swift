@@ -17,10 +17,19 @@ enum FoodCategories: String, CaseIterable {
     
 }
 
+enum Unitss: String, CaseIterable {
+    case grams = "grams"
+    case kg = "kg"
+    case litres = "litres"
+    case ml = "ml"
+    case units = "units"
+    
+}
+
 struct Ingredient {
     let name: String
     var quantity: Int
-    let unit: String
+    let unit: Unitss
     let category: FoodCategories
     let expdate: String
     
