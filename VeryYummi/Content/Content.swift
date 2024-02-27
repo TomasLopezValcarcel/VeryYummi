@@ -26,7 +26,8 @@ enum Unitss: String, CaseIterable {
     
 }
 
-struct Ingredient {
+struct Ingredient: Identifiable {
+    let id: UUID = UUID()
     let name: String
     var quantity: Int
     let unit: Unitss
@@ -47,18 +48,32 @@ struct Ingredient {
 }
     
 
-struct Recipes: Identifiable {
+struct Recipe: Identifiable {
     let id: UUID = UUID()
     let name: String
-    let ingredients: String
+    let ingredients: [Ingredient]
     let isFavourite: Bool
     let rating: Int
     
     #if DEBUG
-    static var example: [Recipes] {
-        [Recipes(name: "Beans on toast", ingredients: "Beans", isFavourite: true, rating: 4),
-        Recipes(name: "Bagel w/ cream cheese", ingredients: "Bagel", isFavourite: false, rating: 5),
-        Recipes(name: "Ice cream float", ingredients: "Ice cream", isFavourite: true, rating: 4)]
+    static var examples: [Recipe] {
+        [Recipe(name: "Beans on toast", ingredients:
+                    [Ingredient(name: "Beans", quantity: 1, unit: .grams, category: .drinks, expdate: "01/01/2025"),
+                     Ingredient(name: "Toast", quantity: 1, unit: .grams, category: .drinks, expdate: "01/01/2025")],
+                isFavourite: true,
+                rating: 4),
+         Recipe(name: "Bagel w/ cream cheese", ingredients:
+                     [Ingredient(name: "Bagel", quantity: 1, unit: .grams, category: .drinks, expdate: "01/01/2025"),
+                      Ingredient(name: "Cream cheese", quantity: 1, unit: .grams, category: .drinks, expdate: "01/01/2025")],
+                 isFavourite: false,
+                 rating: 4),
+         Recipe(name: "Ice cream float", ingredients:
+                     [Ingredient(name: "Ice", quantity: 1, unit: .grams, category: .drinks, expdate: "01/01/2025"),
+                      Ingredient(name: "Cream", quantity: 1, unit: .grams, category: .drinks, expdate: "01/01/2025"),
+                      Ingredient(name: "Float", quantity: 1, unit: .grams, category: .drinks, expdate: "01/01/2025")],
+                 isFavourite: true,
+                 rating: 4)
+         ]
     }
 
     #endif
