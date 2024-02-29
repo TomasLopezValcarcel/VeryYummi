@@ -10,6 +10,8 @@
 		DC0676162B6D5532002C8F6D /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0676152B6D5532002C8F6D /* RecipesView.swift */; };
 		DC7F2AA22B877D32005A43B0 /* IngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7F2AA12B877D32005A43B0 /* IngredientsView.swift */; };
 		DCD0D0742B8DEF2300B2DB2F /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD0D0732B8DEF2300B2DB2F /* RecipeDetailView.swift */; };
+		DCDDE9492B90B44D00DCC3FA /* IngredientsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDE9482B90B44D00DCC3FA /* IngredientsViewModel.swift */; };
+		DCDDE94B2B90B8DD00DCC3FA /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDDE94A2B90B8DD00DCC3FA /* RecipesViewModel.swift */; };
 		DCDE87512B628CA300FA55E9 /* VeryYummiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE87502B628CA300FA55E9 /* VeryYummiApp.swift */; };
 		DCDE87532B628CA300FA55E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE87522B628CA300FA55E9 /* ContentView.swift */; };
 		DCDE87552B628CA600FA55E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCDE87542B628CA600FA55E9 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		DC0676152B6D5532002C8F6D /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		DC7F2AA12B877D32005A43B0 /* IngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsView.swift; sourceTree = "<group>"; };
 		DCD0D0732B8DEF2300B2DB2F /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		DCDDE9482B90B44D00DCC3FA /* IngredientsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewModel.swift; sourceTree = "<group>"; };
+		DCDDE94A2B90B8DD00DCC3FA /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
 		DCDE874D2B628CA300FA55E9 /* VeryYummi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeryYummi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDE87502B628CA300FA55E9 /* VeryYummiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeryYummiApp.swift; sourceTree = "<group>"; };
 		DCDE87522B628CA300FA55E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DCDDE9472B90B40500DCC3FA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DCDDE9482B90B44D00DCC3FA /* IngredientsViewModel.swift */,
+				DCDDE94A2B90B8DD00DCC3FA /* RecipesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		DCDE87442B628CA300FA55E9 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				DCDE87502B628CA300FA55E9 /* VeryYummiApp.swift */,
+				DCDDE9472B90B40500DCC3FA /* ViewModel */,
 				DCDE877A2B628CD500FA55E9 /* Views */,
 				DCDE877B2B628CE100FA55E9 /* Content */,
 				DCDE87542B628CA600FA55E9 /* Assets.xcassets */,
@@ -285,9 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDDE94B2B90B8DD00DCC3FA /* RecipesViewModel.swift in Sources */,
 				DCDE87532B628CA300FA55E9 /* ContentView.swift in Sources */,
 				DCD0D0742B8DEF2300B2DB2F /* RecipeDetailView.swift in Sources */,
 				DC7F2AA22B877D32005A43B0 /* IngredientsView.swift in Sources */,
+				DCDDE9492B90B44D00DCC3FA /* IngredientsViewModel.swift in Sources */,
 				DCDE87512B628CA300FA55E9 /* VeryYummiApp.swift in Sources */,
 				DC0676162B6D5532002C8F6D /* RecipesView.swift in Sources */,
 				DCDE877D2B628CF000FA55E9 /* Content.swift in Sources */,

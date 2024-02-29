@@ -9,11 +9,12 @@ import SwiftUI
 
 struct RecipesView: View {
     
-    let recipes = Recipe.examples
+    @StateObject var recipesViewModel: RecipesViewModel = RecipesViewModel()
+    
     
     var body: some View {
         List{
-            ForEach(recipes) { recipe in
+            ForEach(recipesViewModel.recipes) { recipe in
                 HStack {
                     Text(recipe.name)
                     Text("\(recipe.isFavourite ? "Favourite" : "")")
