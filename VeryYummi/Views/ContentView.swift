@@ -16,13 +16,15 @@ struct ContentView: View {
     //
     
     var body: some View{
-        Toggle("Show Recipes", isOn: $isShowingRecipesView)
-            .padding(.horizontal)
-        if isShowingRecipesView{
+        TabView{
             RecipesView()
-        }
-        else{
+                .tabItem{
+                    Label("Recipes", systemImage: "bolt.fill")
+                }
             IngredientsView()
+                .tabItem{
+                    Label("Ingredients", systemImage: "flame.fill")
+                }
         }
     }
 
