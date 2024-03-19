@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct IngredientsView: View {
-   
+//    @State private var ingredientsViewModel = IngredientsViewModel.shared
     @StateObject var ingredientsViewModel: IngredientsViewModel = IngredientsViewModel()
     
     @State private var showSheet = false

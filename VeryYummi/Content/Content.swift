@@ -18,11 +18,11 @@ enum FoodCategories: String, CaseIterable {
 }
 
 enum Unitss: String, CaseIterable {
-    case grams = "grams"
-    case kg = "kg"
-    case litres = "litres"
-    case ml = "ml"
-    case units = "units"
+    case grams
+    case kg
+    case litres
+    case ml
+    case units
     
 }
 
